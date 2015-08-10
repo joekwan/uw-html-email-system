@@ -1,0 +1,127 @@
+/*** Global custom typography */
+.vib td, .social td, .casl td p {
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/*** MOD View in browser ***/
+.vib tr td {
+	padding-top: 10px;
+}
+
+
+/*** MOD Logo ***/
+.logo img {
+	padding: 10px 0 30px 0;
+}
+
+
+/*** MOD Highlight bar ***/
+.highlight-bar {
+	background: #000000;
+}
+
+.hl-title {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 16px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 10px 8px 30px !important;
+}
+
+.hl-button {
+	padding-right: 30px !important;
+	display: table-cell !important;
+	vertical-align: middle !important;
+}
+
+
+/*** MOD Hero ***/
+.hero td {
+	padding: 0;
+}
+
+
+/*** MOD Sub images ***/
+.sub-images img {
+	display: inline-block;
+	clear: none;
+}
+
+.sub-images .left {
+	float: left;
+}
+
+.sub-images .right {
+	float: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] .sub-images .left, .sub-images .right{
+  	float: none !important;
+  }
+  table[class="body"] .sub-images img{
+  	display: block !important;
+  	margin: 0 auto !important;
+  	margin-bottom: 10px !important;
+  }
+  
+}
+
+
+/*** MOD Body copy ***/
+.body-copy td {
+	padding-top: 30px;
+}
+
+
+/*** MOD When/where ***/
+.when td.wrapper, .where td.wrapper {
+	padding-top: 0;
+}
+
+.when td.desc, .where td.desc {
+	font-size: 12px;
+}
+
+
+/*** MOD Buttons ***/
+table.buttons .wrapper {
+	padding-bottom: 30px !important;
+}
+
+
+/*** MOD Social row ***/
+.social td {
+	text-transform: uppercase;
+	font-size: 9px;
+}
+
+.social td a {
+	color: #000000;
+}
+
+/*** MOD CASL ***/
+.casl {
+	margin-bottom: 10px;
+}
+
+.casl td p {
+	line-height: 12px;
+}
+
+
+/*** UTILITY CLASSES ***/
+
+.background-white {
+	background: #FFFFFF;
+}
+
+.background-grey {
+	background: #EEEEEE;
+}
