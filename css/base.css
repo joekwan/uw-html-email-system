@@ -764,7 +764,7 @@ body.outlook p {
 
   table[class="body"] .content-left.mobile-border {
     /*clear: both;*/
-    border-bottom: 1px solid #CCC;
+    border-bottom: 0px solid #FFF;
   }
 
   table[class="body"] .content-right {

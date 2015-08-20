@@ -97,3 +97,34 @@ table.buttons .wrapper {
 .background-grey {
 	background: #EEEEEE;
 }
+
+/*** FACULTY COLOUR FONT ***/
+.ahsteal {
+	color: #007F8A;
+	font-weight: bold;
+}
+
+.artsorange {
+	color: #E98300;
+	font-weight: bold;
+}
+
+.engpurple {
+	color: #57068C;
+	font-weight: bold;
+}
+
+.envgreen {
+	color: #B6BF00;
+	font-weight: bold;
+}
+
+.mathpink {
+	color: #E0249A;
+	font-weight: bold;
+}
+
+.sciblue {
+	color: #0073CF;
+	font-weight: bold;
+}
