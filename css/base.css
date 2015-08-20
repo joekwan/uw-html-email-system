@@ -772,7 +772,7 @@ body.outlook p {
   }
 
   table[class="body"] .wrapper.button-left {
-    padding-bottom: 0 !important;
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] .button-right {
