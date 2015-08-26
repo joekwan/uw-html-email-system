@@ -46,6 +46,34 @@
 }
 
 
+/*** MOD Sub images ***/
+.sub-images img {
+	display: inline-block;
+	clear: none;
+}
+
+.sub-images .left {
+	float: left;
+}
+
+.sub-images .right {
+	float: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] .sub-images .left, .sub-images .right{
+  	float: none !important;
+  }
+  table[class="body"] .sub-images img{
+  	display: block !important;
+  	margin: 0 auto !important;
+  	margin-bottom: 10px !important;
+  }
+  
+}
+
+
 /*** MOD Body copy ***/
 .body-copy td {
 	padding-top: 30px;
@@ -97,6 +125,7 @@ table.buttons .wrapper {
 .background-grey {
 	background: #EEEEEE;
 }
+
 
 /*** FACULTY COLOUR FONT ***/
 .ahsteal {
