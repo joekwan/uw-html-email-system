@@ -780,7 +780,7 @@ body.outlook p {
   }
 
   table[class="body"] .body-copy .wrapper.last {
-    padding-top: 0 !important;
+    padding-top: 10px !important;
   }
 }
 
