@@ -13,9 +13,10 @@
 \contentsline {section}{\numberline {8}Inline version}{12}
 \contentsline {section}{\numberline {9}Testing}{12}
 \contentsline {subsection}{\numberline {9.1}Responsive and cross-browser testing}{12}
-\contentsline {subsection}{\numberline {9.2}Testing for Outlook on PC}{13}
-\contentsline {subsection}{\numberline {9.3}Checklist for others}{13}
-\contentsline {section}{\numberline {10}Sending out the evite}{14}
-\contentsline {subsection}{\numberline {10.1}Outlook on PC}{14}
-\contentsline {subsection}{\numberline {10.2}Outlook on Mac}{14}
-\contentsline {subsection}{\numberline {10.3}Groupmail or Mailchimp}{14}
+\contentsline {subsection}{\numberline {9.2}Checklist for testing}{13}
+\contentsline {subsection}{\numberline {9.3}Testing for Outlook on PC}{13}
+\contentsline {subsection}{\numberline {9.4}Testing with Mailchimp}{14}
+\contentsline {section}{\numberline {10}Sending out the evite}{15}
+\contentsline {subsection}{\numberline {10.1}Outlook on PC}{15}
+\contentsline {subsection}{\numberline {10.2}Outlook on Mac}{15}
+\contentsline {subsection}{\numberline {10.3}Groupmail or Mailchimp}{15}

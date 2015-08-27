@@ -181,8 +181,7 @@
 		\item[Step 1] Copy and paste the code for the pre-inline version into a new file. Comment out \textbf{section 3} in the template (the "View in browser" link). 
 		\item[Step 2] The online version of an evite should always be the links in section 12A, regardless of what the CASL links say in the non-online versions (unless otherwise specified).
 		\item[Step 3] If there were any merge tags in the body content (e.g. $<$name$>$, etc.), remove it or replace it with something more general (for example, "Hello $<$name$>$," could become "Hello guest," instead). 
-		\item[Step 4] Save as "C00XXXX-online.html" where C00XXXX is the project number.
-		\item[Step 5] Drag and drop this file into the FileZilla folder you created for this project.
+		\item[Step 4] Save as "C00XXXX-online.html" where C00XXXX is the project number. Drag and drop this file into the FileZilla folder you created for this project.
 	\end{itemize}
 	
 	\section{Inline version}
@@ -202,6 +201,15 @@
 		\item[Step 2] Change the width of the browser window to ensure the responsive parts are displayed how they are supposed to.
 	\end{itemize}
 	
+	\subsection{Checklist for testing}
+	\begin{description}
+		\item[Title] Make sure the Title of the document in the \texttt{$<$title$>$} tags in the \texttt{$<$head$>$} section of the HTML is changed according to the evite. 
+		\item[Links] Make sure all the links are working and linking to the correct things.
+		\item[Online version] Make sure the online version is linked correctly and that the link to the online version doesn't appear on the online version.
+		\item[Social links] Make sure these link to the correct social media accounts.
+		\item[Apostrophes and emdashes] This is mostly important for evites being sent through Groupmail. In the past, curved apostrophes and emdashes have not shown up in emails sent out through Groupmail, so we switch the curved apostrophes with a straight one (') and emdashes with hyphens.
+	\end{description} 
+	
 	\subsection{Testing for Outlook on PC}
 	If the client is using Outlook on a PC to send out emails, you should use the PC computer behind Joe's desk to test the evite out. You will not have to test responsiveness for these emails because Outlook makes them static. Below are the steps to insert the HTML into the email.
 	\begin{itemize}
@@ -211,14 +219,23 @@
 	\end{itemize}
 	** Note that forwarding evites for any reason will make extra spaces appear between sections of the evite sometimes. For best testing practice, send directly or use the Outlook template version of the evite.
 	
-	\subsection{Checklist for others}
-	\begin{description}
-		\item[Title] Make sure the Title of the document in the \texttt{$<$title$>$} tags in the \texttt{$<$head$>$} section of the HTML is changed according to the evite. 
-		\item[Links] Make sure all the links are working and linking to the correct things.
-		\item[Online version] Make sure the online version is linked correctly and that the link to the online version doesn't appear on the online version.
-		\item[Social links] Make sure these link to the correct social media accounts.
-		\item[Apostrophes and emdashes] This is mostly important for evites being sent through Groupmail. In the past, curved apostrophes and emdashes have not shown up in emails sent out through Groupmail, so we switch the curved apostrophes with a straight one (') and emdashes with hyphens.
-	\end{description} \newpage
+	\newpage
+	
+	\subsection{Testing with Mailchimp}
+	\begin{itemize}
+		\item[Step 1] On your dashboard, click on create a new campaign near the top right. Select Regular Campaign.
+		\item[Step 2] Select a list to send it to - this won't matter because you won't actually be sending the email to them. If you have your own account, you can make a sample list. Click Next in the bottom right.
+		\item[Step 3] Fill in Campaign info. Since this is a test email, you only need to fill in the email subject. You can fill in other information like "Name your campaign" if you want. Click Next when done.
+		\item[Step 4] For the Template, select "Code your own" (next to Campaigns). Then choose "Paste in code".
+		\begin{center}
+		\includegraphics[scale=0.58]{images/step1}
+		\end{center}
+		\item[Step 5] Paste in the code on the right. A preview will display on the left. 
+		\begin{center}
+		\includegraphics[scale=0.48]{images/step2}
+		\end{center}
+		\item[Step 6] If you're satisfied with the preview, select "Preview and Test" at the top right corner (next to Save and Exit). Click on "Send a Test Email". Enter your email address and click Send Test when done (you can delete this campaign when you're done with it).
+	\end{itemize}
 
 	\section{Sending out the evite}
 	Again, the way the evite is prepared depends on how the client will be sending out the evite.
