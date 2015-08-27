@@ -33,6 +33,7 @@ Each major section of the templates will be wrapped in comments that have a numb
 <!-- END highlight bar -->
 <!-- ***************** -->
 ```
+Note that Zurb's Ink templates are previewed best in Google Chrome or Safari. The templates do not always display properly in Firefox.
 
 Once you have completed building the email you must go through a series of steps to get the code ready to be distributed.
 
