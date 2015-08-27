@@ -1,6 +1,6 @@
 # University of Waterloo HTML email system
 
-This is summarized documentation for how to use this HTML email template system. For more comprehensive information, refer to the documentation in the Documentation folder.
+This is summarized documentation for how to use this HTML email template system. For more comprehensive information, refer to the [documentation](https://github.com/joekwan/uw-html-email-system/tree/master/documentation) in the Documentation folder.
 
 
 ## Layout variations
