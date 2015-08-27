@@ -1,6 +1,6 @@
 # University of Waterloo HTML email system
 
-This is summarized documentation for how to use this HTML email template system. For more information, refer to the documentation in the Documentation folder.
+This is summarized documentation for how to use this HTML email template system. For more comprehensive information, refer to the documentation in the Documentation folder.
 
 
 ## Layout variations
@@ -23,7 +23,18 @@ This template has options for:
 
 ## Pre-production
 
+Each major section of the templates will be wrapped in comments that have a number and a description of what the section is for.
+```(html)
+<!-- ********************* -->
+<!-- 5 START highlight bar -->
+<!-- ********************* -->
+(code goes here)
+<!-- ***************** -->
+<!-- END highlight bar -->
+<!-- ***************** -->
+```
+
 Once you have completed building the email you must go through a series of steps to get the code ready to be distributed.
 
 ### Inlining CSS
-This is the most important step since most email clients do not support linking external stylesheets. There are a number of online inliners but the one we recommend is the [Inky inliner by Zurb](http://zurb.com/ink/inliner.php) since we are also using their Ink email framework to begin with.
+This is the most important step since most email clients do not support linking external stylesheets. There are a number of online inliners but the one we recommend is the [Inky inliner by Zurb](http://zurb.com/ink/inliner.php) since we are using their Ink email framework to begin with.
