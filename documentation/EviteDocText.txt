@@ -1,0 +1,139 @@
+\documentclass[a4paper,11pt]{article}
+	% definitions
+	\author{MSC Digital Co-op}
+	\title{University of Waterloo HTML Email Invitations}
+	% settings
+	\setlength\parindent{0pt}
+	\pagestyle{headings}
+	\usepackage{listings}
+	\setlength{\parskip}{1em}
+	\usepackage{url}
+	\usepackage{enumitem}
+	\setlist{leftmargin=0.75in}
+	\usepackage{xcolor}
+	\usepackage{mathtools}
+	\usepackage{tipa}
+	\lstdefinestyle{base}{
+		language=Java,
+		emptylines=1,
+		breaklines=true,
+		showstringspaces=false,
+		basicstyle=\ttfamily\color{black},
+		moredelim=**[is][\color{red}]{@}{@},
+	}
+	
+	\begin{document}
+	
+	\maketitle %title
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\newpage
+	\section{Introduction}
+	\subsection{What are Evites?}
+	HTML invitations, or evites, are event emails created using HTML. These emails are often created using a table grid structure due to the fact that email clients do not have consistent rendering.
+	\subsection{Responsiveness}
+	As the popularity of mobile devices and tablets has skyrocketed in the last decade, responsiveness has become a vital part to designing webpages. Responsiveness is achieved by various HTML elements such as media queries and percentages. This allows webpages to display properly across all types of electronic devices. HTML emails are also becoming more responsive. All the evite templates have full responsiveness unless the client is sending the evite through the email client Outlook (in which case it will become a static email).
+	
+	%\section{Tools and Software}
+	%This section lists the tools and software you will be working with for creating evites.
+	%\subsection{HTML and CSS}
+	%As you might have guessed from the name of HTML invites, 
+	
+	\section{Workflow}
+	You will be working with the Creative Services department when creating elites. Below is a little overview of the workflow that goes on between you, Creative Services, and the client in the evite process.
+	\begin{itemize}
+		\item[Step 1] The client requests an evite via online requisition through Creative Services. The designers at Creative Services will then design an evite for the client.
+		\item[Step 2] Creative Services gets the design approved by the client. The approved design is then passed onto you. You will create an evite based on the design and test it.
+		\item[Step 3] After testing, you will send the evite back to Creative Services. They will also do some testing, and send it back to you if there is anything that needs to be fixed. If everything looks well, they will send it back to the client for approval.
+		\item[Step 4] The client will also do once-overs. Again, if there is anything that needs to be fixed, it will be sent back to you.
+		\item[Step 5] If all is well, the client will send out their new evite.
+	\end{itemize}
+	
+	\section{Setting Up}
+	Creative Services will send you the files needed for the evite. This usually consists of the header image for the evite and a PDF of the evite's final design. Again, this process is not set in stone, but this is what has previously been done.
+	\begin{itemize}
+		\item[Step 1] Create a new folder locally in the Evites folder (in Documents) and name it after the project number (e.g. C008576). Save all the files that Creative Services has sent you for the evite in this folder.
+		\item[Step 2] To put this folder on the Creative Services server, we use FileZilla. FileZilla is a file transfer protocol (FTP) client. The login information for FileZilla is below in Table ~\ref{tab:log}: \par
+			\begin{table}[htp]
+			\begin{center}
+			\label{tab:log}
+			\caption{FileZilla Login Details}
+			\begin{tabular}{| l | l | l | l |}
+			\hline
+			Host & Username & Password & Port \\ \hline
+			sftp://radon.uwaterloo.ca & MSC-CSCO & \textit{password} & 22 \\ \hline
+			\end{tabular}
+			\end{center}
+			\end{table}
+		\item[Step 3] In the remote site field, enter: \begin{verbatim} /fsys1/www/creativeservices.uwaterloo.ca/evites \end{verbatim}
+		\item[Step 4] Make sure that the bottom portion of FileZilla is on the tab "Queued files". Drag and drop the local folder into this portion. Right click anywhere in the Queue and select "Process Queue". You can check to see if the folder has successfully been uploaded in the remote site.
+		\item[Step 5] Navigate into the folder. In the permissions column, make sure all the images have the permissions '"-rw-r--r--". If they don't, right click on the image and select "file permissions". In the window that pops up, type in 664 for the numeric value.
+	\end{itemize}
+	
+	\section{Outline of the Evite Process}
+	\subsection{Overview of the evites}
+	Although this process is not set in stone, in the past, 4 versions of the evite are created. Each version will be explained below.
+	\begin{itemize}
+		\item Base: this is the HTML file that you would start with from the template.
+		\item Pre-inline: the version with the stylesheet contents within the head section.
+		\item Inline: the version with the styles all inlined in the HTML.
+		\item Online: the online version of the evite (no "Click here to view in browser", merge fields, etc). 
+	\end{itemize}
+	
+	\section{Base: Working with the Templates}
+	The templates we use are based off Zurb's Ink templates. Ink is a project launched by Curb to provide quick and easy responsive emails.There are 3 base templates to work from: the 1 column template, the 1 column template with sub-header images, and the 2 column template. Select the template that best follows the evite design that Creative Services provided to you. All of their components are further explained below.
+	\subsection{1 Column Template}
+	\includegraphics[scale=0.58]{images/1col-template}
+	
+	\begin{description}
+		\item[3 - View in browser] \hfill \\
+		This section links to the online version of the evite. The URL can be obtained from FileZilla.
+		\item[4 - University of Waterloo logo] \hfill \\
+		The University of Waterloo logo at the top of the evite. \textbf{Do not edit this section}.
+		\item[5 - Highlight bar] \hfill \\
+		Contains the title of the evite and the top button.
+		\item[6 - Hero image] \hfill \\
+		The header image for the evite. This changes for each evite. Again, the path can be obtained from FileZilla, but is usually http://creativeservices.uwaterloo.ca/evites/C00XXXX/nameoffile.jpg, where C00XXXX is the project name and nameoffile is the actual name of the header image file.
+		\item[7A - Optional image in text] \hfill \\
+		Optional images floated to the left or right in the text content of the evite. Comment out what is not needed.
+		\item[8 - Optional When/Where] \hfill \\
+		You can comment this section out is it is not needed.
+		\item[9 - Optional lower buttons] \hfill \\
+		The links to the buttons (and sometimes the button text) is changed here. Again, you can comment these out if not needed.
+		\item[10 - Social links] \hfill \\
+		These usually change based on which department or faculty the evite is for.
+		\item[11 - Footer logo] \hfill \\
+		\textbf{Do not edit this section}.
+		\item[12 - Canadian Anti-Spam Legislation (CASL) information] \hfill \\
+		This information changes depending on who the client is, particularly the "Unsubscribe" link. Unless otherwise specified, the Unsubscribe button will remain as the code in 12A DEFAULT UNSUB. The other options are mostly for alumni events, news, etc. Uncomment out the version of the links that will be used and comment out the others.
+	\end{description}
+	
+	\subsection{1 Column Template with Sub-image headers}
+	
+	\subsection{2 Column Template}
+	
+	\section{Pre-inline version}
+	After you are satisfied with how the evite looks, copy all the code in the HTML file (command +  A) and paste it into a new file. At the top of the code in section 1, delete the code that links to the stylesheets:
+	\begin{verbatim}
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/style-1-column.css">
+	\end{verbatim}
+	Then in the CSS folder, you will find the various CSS files. Copy the contents of base.css and paste it between the first style tags. \textit{It is important that the base css styles go first}.
+	\begin{verbatim}
+		<style type="text/css">
+		/* Ink styles go here in production */
+		</style>
+	\end{verbatim}
+		
+	\section{Testing}
+	Testing is an important part of the elites. The testing process will depend on how the evite will be distributed (via Outlook on Mac or PC, or another email distribution service like Mailchimp or Groupmail). You will mainly be testing the inlined version, since that is the version that will be used to send out evites. Other things to look over are:
+	\begin{itemize}
+		\item Links: Make sure all the links are working 
+	\end{itemize}
+	
+	
+	
+	\end{document}	
+	
