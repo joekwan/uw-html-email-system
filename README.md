@@ -39,3 +39,8 @@ Once you have completed building the email you must go through a series of steps
 
 ### Inlining CSS
 This is the most important step since most email clients do not support linking external stylesheets. There are a number of online inliners but the one we recommend is the [Inky inliner by Zurb](http://zurb.com/ink/inliner.php) since we are using their Ink email framework to begin with.
+
+You must paste the contents of the base stylesheet and the custom stylesheet (in that order) into ```<style>``` tags in the head of the HTML. Then paste that code into the inliner. The code it renders is the inlined version.
+
+## Customization
+While the templates are meant to be the underlying framework for the evites. However, if customization is needed for a certain evite, or if you would like to make improvements, see Zurb's [Ink documentation](http://zurb.com/ink/docs.php).
